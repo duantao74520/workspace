@@ -1,0 +1,8 @@
+objFiles = hello.o mySwap.o #使用变量 定义目标文件
+#目标文件的用法 $(Var)
+app:$(objFiles)
+	g++ -o app -I ./include $(objFiles)
+hello.o:src/hello.cpp
+	g++ -c src/hello.cpp -I ./include
+mySwap.o:src/mySwap.cpp
+	g++ -c src/mySwap.cpp -I ./include

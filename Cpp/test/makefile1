@@ -1,0 +1,2 @@
+app:src/hello.cpp src/mySwap.cpp
+	g++ -o app -I ./include src/hello.cpp src/mySwap.cpp

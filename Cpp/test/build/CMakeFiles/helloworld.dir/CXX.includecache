@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/mySwap.h
+
+/home/duan/workspace/Cpp/src/hello.cpp
+iostream
+-
+string
+-
+vector
+-
+mySwap.h
+/home/duan/workspace/Cpp/src/mySwap.h
+
+/home/duan/workspace/Cpp/src/mySwap.cpp
+mySwap.h
+/home/duan/workspace/Cpp/src/mySwap.h
+

@@ -1,0 +1,9 @@
+{
+    "files.associations": {
+        "stdio.h": "c",
+        "dirent.h": "c",
+        "epoll.h": "c",
+        "string.h": "c",
+        "bufferevent.h": "c"
+    }
+}

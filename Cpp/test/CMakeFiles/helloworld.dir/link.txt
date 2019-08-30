@@ -1,0 +1,1 @@
+/usr/bin/cc     CMakeFiles/helloworld.dir/src/test.c.o  -o helloworld -rdynamic 

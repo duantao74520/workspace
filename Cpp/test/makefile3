@@ -1,0 +1,13 @@
+#得到所有 .cpp 文件
+SrcFile = $(wildcard  src/*.cpp)
+#把所有 .cpp 文件变成 .o文件
+objFiles1 = $(patsubst %.cpp, %.o,$(SrcFile))
+#目标文件的用法 $(Var)
+app:$(objFiles1)  #目标：依赖
+	g++ -o app -I ./include $(objFiles1)
+#模式匹配规则 $@,$< 这样的变量，只能出现在规则中
+src/%.o:src/%.cpp
+	g++ -c $<  -I ./include  -o $@
+test:
+	echo $(SrcFile)
+	echo $(objFiles1)
